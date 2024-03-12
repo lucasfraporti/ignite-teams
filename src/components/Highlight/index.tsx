@@ -1,8 +1,8 @@
-import { Container, Subtitle, Title } from "./styles";
+import { Container, Subtitle, Title } from './styles'
 
 type HighlightProps = {
-  title: string,
-  subtitle: string,
+  title: string
+  subtitle: string
 }
 
 export function Highlight({ title, subtitle }: HighlightProps) {

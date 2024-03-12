@@ -1,16 +1,15 @@
-import { BackButton, BackIcon, Container, Logo } from "./styles";
-
 import logoImg from '@assets/logo.png'
 
+import { BackButton, BackIcon, Container, Logo } from './styles'
+
 type HeaderProps = {
-  showBackButton?: boolean,
+  showBackButton?: boolean
 }
 
 export function Header({ showBackButton = false }: HeaderProps) {
   return (
     <Container>
-      
-      { showBackButton && (
+      {showBackButton && (
         <BackButton>
           <BackIcon />
         </BackButton>

@@ -1,9 +1,7 @@
-import { TouchableOpacity } from "react-native";
-
 import { UsersThree } from 'phosphor-react-native'
-
-import styled from "styled-components/native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
+import { TouchableOpacity } from 'react-native'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
+import styled from 'styled-components/native'
 
 export const Container = styled(TouchableOpacity)`
   width: 100%;
@@ -28,7 +26,7 @@ export const Title = styled.Text`
 export const Icon = styled(UsersThree).attrs(({ theme }) => ({
   size: 32,
   color: theme.COLORS.GREEN_700,
-  weight: 'fill'
+  weight: 'fill',
 }))`
   margin-right: 20px;
 `
