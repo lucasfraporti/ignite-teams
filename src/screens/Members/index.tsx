@@ -6,21 +6,29 @@ import { Highlight } from '@components/Highlight'
 import { Input } from '@components/Input'
 import { ListEmpty } from '@components/ListEmpty'
 import { MemberCard } from '@components/MemberCard'
+import { useRoute } from '@react-navigation/native'
 import { useState } from 'react'
 import { FlatList } from 'react-native'
 
 import { Container, Form, HeaderList, NumberOfMembers } from './styles'
 
+type RouteParams = {
+  group: string
+}
+
 export function Members() {
   const [team, setTeam] = useState('Time A')
   const [members, setMembers] = useState([])
+
+  const route = useRoute()
+  const { group } = route.params as RouteParams
 
   return (
     <Container>
       <Header showBackButton />
 
       <Highlight
-        title="Nome da turma"
+        title={group}
         subtitle="adicione os integrantes e separe os grupos"
       />
 
