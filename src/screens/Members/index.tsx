@@ -113,7 +113,13 @@ export function Members() {
           )}
           horizontal
         />
-        <NumberOfMembers>{members.length}</NumberOfMembers>
+        <NumberOfMembers>
+          {members.length === 0
+            ? 'Não possue membro'
+            : members.length === 1
+              ? '1 membro'
+              : `${members.length} membros`}
+        </NumberOfMembers>
       </HeaderList>
 
       <FlatList

@@ -28,9 +28,13 @@ export const HeaderList = styled.View`
 `
 
 export const NumberOfMembers = styled.Text`
+  padding: 8px;
+
   ${({ theme }) => css`
     color: ${theme.COLORS.GRAY_200};
     font-family: ${theme.FONT_FAMILY.BOLD};
     font-size: ${theme.FONT_SIZE.SM}px;
+
+    border: 1px solid ${theme.COLORS.GREEN_500};
   `}
 `
